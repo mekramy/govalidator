@@ -1,4 +1,4 @@
-package govalidator
+package funcs
 
 import (
 	"math/big"
