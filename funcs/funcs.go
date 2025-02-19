@@ -18,6 +18,42 @@ func IsValidUsername(username string) bool {
 	return re.MatchString(username)
 }
 
+// IsAlphaNumeric checks if the input contains only English letters, numbers, and optional extra characters.
+func IsAlphaNumeric(value string, includes ...string) bool {
+	// Generate escaped regexp pattern
+	var builder strings.Builder
+	builder.WriteString(`^[a-zA-Z0-9`)
+	for _, i := range includes {
+		builder.WriteString(regexp.QuoteMeta(i))
+	}
+	builder.WriteString(`]+$`)
+
+	// Create regexp and validate
+	re, err := regexp.Compile(builder.String())
+	if err != nil {
+		return false
+	}
+	return re.MatchString(value)
+}
+
+// IsAlphaNumericWithPersian checks if the input contains only English letters, Persian letters, numbers, and optional extra characters.
+func IsAlphaNumericWithPersian(value string, includes ...string) bool {
+	// Generate escaped regexp pattern
+	var builder strings.Builder
+	builder.WriteString(`^[a-zA-Z0-9\u0600-\u06FF\uFB8A\u067E\u0686\u0698\u06AF`)
+	for _, i := range includes {
+		builder.WriteString(regexp.QuoteMeta(i))
+	}
+	builder.WriteString(`]+$`)
+
+	// Compile regex and validate
+	re, err := regexp.Compile(builder.String())
+	if err != nil {
+		return false
+	}
+	return re.MatchString(value)
+}
+
 // IsValidIranianPhone checks if the iranian phone number is valid.
 func IsValidIranianPhone(phone string) bool {
 	re := regexp.MustCompile(`^0[1-9][0-9]{9}$`)
