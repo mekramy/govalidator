@@ -72,8 +72,8 @@ func IsValidIranianPostalCode(postalCode string) bool {
 	return re.MatchString(postalCode)
 }
 
-// IsValidIranianIDNumber checks if the Iranian ID (birth certificate) number is valid.
-func IsValidIranianIDNumber(id string) bool {
+// IsValidIranianIdNumber checks if the Iranian ID (birth certificate) number is valid.
+func IsValidIranianIdNumber(id string) bool {
 	re := regexp.MustCompile(`^[0-9]{1,10}$`)
 	return re.MatchString(id)
 }
