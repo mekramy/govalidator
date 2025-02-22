@@ -6,8 +6,9 @@ require (
 	github.com/gabriel-vasile/mimetype v1.4.8
 	github.com/go-playground/validator/v10 v10.25.0
 	github.com/inhies/go-bytesize v0.0.0-20220417184213-4913239db9cf
-	github.com/mekramy/goi18n v0.0.0-20250218111311-3f409ba62885
+	github.com/mekramy/goi18n v0.0.1
 	github.com/mekramy/gojalaali v0.0.1
+	golang.org/x/text v0.22.0
 )
 
 require (
@@ -20,5 +21,4 @@ require (
 	golang.org/x/crypto v0.32.0 // indirect
 	golang.org/x/net v0.34.0 // indirect
 	golang.org/x/sys v0.29.0 // indirect
-	golang.org/x/text v0.22.0 // indirect
 )

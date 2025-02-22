@@ -14,8 +14,8 @@ github.com/inhies/go-bytesize v0.0.0-20220417184213-4913239db9cf h1:FtEj8sfIcaaB
 github.com/inhies/go-bytesize v0.0.0-20220417184213-4913239db9cf/go.mod h1:yrqSXGoD/4EKfF26AOGzscPOgTTJcyAwM2rpixWT+t4=
 github.com/leodido/go-urn v1.4.0 h1:WT9HwE9SGECu3lg4d/dIA+jxlljEa1/ffXKmRjqdmIQ=
 github.com/leodido/go-urn v1.4.0/go.mod h1:bvxc+MVxLKB4z00jd1z+Dvzr47oO32F/QSNjSBOlFxI=
-github.com/mekramy/goi18n v0.0.0-20250218111311-3f409ba62885 h1:eOlW10OLaTPDaYmffHZ8syfwqDHkanv1hqjtpui8rWg=
-github.com/mekramy/goi18n v0.0.0-20250218111311-3f409ba62885/go.mod h1:3mTSerkOBVDnNl16l8MoKHTy53wv6s1qItDRzvSyKz4=
+github.com/mekramy/goi18n v0.0.1 h1:pdMEm62ko275/E1akJdUMuexowHpEyttmovHqzosxM0=
+github.com/mekramy/goi18n v0.0.1/go.mod h1:3mTSerkOBVDnNl16l8MoKHTy53wv6s1qItDRzvSyKz4=
 github.com/mekramy/gojalaali v0.0.1 h1:OFfeOaAEykot9AK/AUm7m5esS5Xvh4QH2xWdC27P8S8=
 github.com/mekramy/gojalaali v0.0.1/go.mod h1:XrNPP00uwapVGUZsyiatGqJ8MLLMg9q764JPCFGNadk=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
